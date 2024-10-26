@@ -1,0 +1,99 @@
+<nav class="navbar navbar-expand-lg fixed-top bg-white">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="/assets/images/logo.png" alt="Minha Construção" class="logo me-2">
+      <span class="brand-name">Minha Construção</span>
+    </a>
+
+    <button class="btn btn-primary d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxxl-block" (click)="login()">
+      <i class="bi bi-google"></i>
+      Entrar com Google
+    </button>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1>Gerencie suas obras com eficiência</h1>
+          <p class="subtitle">Organize, acompanhe e compartilhe o progresso das suas construções em um só lugar</p>
+          <button class="btn btn-primary btn-lg" (click)="login()">
+            Comece Agora Gratuitamente
+          </button>
+        </div>
+        <div class="col-lg-6 text-center">
+          <i class="bi bi-building hero-icon"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <h2 class="text-center">Tudo que você precisa para gerenciar suas obras</h2>
+
+      <div class="row g-4 mt-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card feature-card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-folder feature-icon"></i>
+              <h3>Gestão de Projetos</h3>
+              <p>Organize todos os documentos e projetos em um só lugar, com acesso fácil e seguro.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card feature-card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-images feature-icon"></i>
+              <h3>Galeria de Fotos</h3>
+              <p>Acompanhe visualmente o progresso com registro fotográfico organizado por data.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card feature-card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-graph-up feature-icon"></i>
+              <h3>Métricas e Avanços</h3>
+              <p>Monitore o progresso da obra com indicadores claros e relatórios detalhados.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card feature-card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-share feature-icon"></i>
+              <h3>Compartilhamento</h3>
+              <p>Compartilhe o andamento com seus clientes através de um portal exclusivo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2>Pronto para transformar a gestão das suas obras?</h2>
+      <p>Junte-se a centenas de profissionais que já estão usando o Minha Construção</p>
+      <button class="btn btn-light btn-lg" (click)="login()">
+        Começar Agora
+      </button>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container text-center">
+    <p>&copy; 2024 Minha Construção. Todos os direitos reservados.</p>
+  </div>
+</footer>

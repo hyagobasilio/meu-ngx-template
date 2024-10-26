@@ -1,0 +1,161 @@
+// landing-page.component.scss
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+$primary-color: #3366ff;
+$text-color: #222b45;
+$text-secondary: #8f9bb3;
+$bg-light: #f5f7ff;
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  height: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+
+  .brand-name {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: $primary-color;
+  }
+}
+
+.hero-section {
+  padding: 8rem 0 6rem;
+  background: linear-gradient(135deg, $bg-light 0%, #ffffff 100%);
+  margin-top: 70px;
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: $text-color;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+    color: $text-secondary;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .hero-icon {
+    font-size: 15rem;
+    color: $primary-color;
+    opacity: 0.1;
+  }
+}
+
+.features-section {
+  padding: 6rem 0;
+  background-color: #ffffff;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $text-color;
+  }
+
+  .feature-card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-icon {
+      font-size: 3rem;
+      color: $primary-color;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $text-color;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: $text-secondary;
+      line-height: 1.6;
+    }
+  }
+}
+
+.cta-section {
+  background: linear-gradient(135deg, $primary-color 0%, #2952cc 100%);
+  color: white;
+  padding: 6rem 0;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+
+  .btn-light {
+    padding: 1rem 3rem;
+    font-weight: 600;
+    color: $primary-color!important;
+
+    &:hover {
+      background-color: $bg-light;
+    }
+  }
+}
+
+.footer {
+  padding: 2rem 0;
+  background-color: #ffffff;
+  color: $text-secondary;
+}
+
+
+
+// Media Queries
+@media (max-width: 992px) {
+  .hero-section {
+    text-align: center;
+    padding: 6rem 0 4rem;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-icon {
+      font-size: 10rem;
+      margin-top: 2rem;
+    }
+  }
+
+  .features-section h2 {
+    font-size: 2rem;
+  }
+
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+}
